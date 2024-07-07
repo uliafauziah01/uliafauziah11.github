@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Input Examples</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Form 1: Basic Name Input -->
+<form action="index.php" method="post" name="input">
+    <h2>Nama Lengkap:</h2>
+    <input type="text" name="nama"><br>
+    <input type="submit" name="InputNama">
+</form>
+
+<!-- Form 2: Multiple my favorite persone Names Input -->
+<form action="index.php" method="post" name="input">
+    <h2>Daftar Orang-Orang Yang Anda Sayang:</h2>
+    1. <input type="text" name="nama1"><br>
+    2. <input type="text" name="nama2"><br>
+    3. <input type="text" name="nama3"><br>
+    4. <input type="text" name="nama4"><br>
+    <input type="submit" name="InputTeman" value="Submit"/>
+</form>
+
+<!-- Form 3: Login  instagram-->
+<form action="index.php" method="post" name="input">
+    <h2>Login Instagram:</h2>
+    Username: <input type="text" name="username"/><br />
+    Password: <input type="password" name="password"/><br />
+    <input type="submit" name="Login" value="Login"/>
+    <input type="reset" name="Login" value="Reset"/>
+</form>
+
+<!-- Form 4: kota asal i -->
+<form action="index.php" method="post" name="input">
+    <h2>Pilih Kota Asal:</h2>
+    <input type="radio" name="kota" value="TIF" checked/> Breses <br />
+    <input type="radio" name="kota" value="TI"/> Tegal <br />
+    <input type="radio" name="kota" value="TE"/> Pemalang <br />
+    <input type="radio" name="kota" value="TK"/> Pekalongan <br />
+    <input type="radio" name="kota" value="TP"/> Bekasi <br />
+    <input type="submit" name="Pilih" value="Pilih"/>
+    <input type="reset" name="Pilihkota" value="Reset"/>
+</form>
+
+<!-- Form 5: buah Favorit -->
+<form action="index.php" method="post" name="input">
+    <h2>Pilih Buah Favorit Kamu:</h2>
+    <input type="checkbox" name="buah1" value="The Beatles" checked> Anggur <br>
+    <input type="checkbox" name="buah2" value="Queen"> Strawberry <br>
+    <input type="checkbox" name="buah3" value="Coldplay"> Melon<br>
+    <input type="checkbox" name="buah4" value="Linkin Park"> Semangka<br>
+    <input type="submit" name="Pilih" value="Pilih"/>
+    <input type="reset" name="PilihBuah" value="Reset"/>
+</form>
+
+<!-- Form 6: Film kartun Favorit (Combo Box) -->
+<form action="index.php" method="post" name="input">
+    <h2>Pilih Film Kartun Anda:</h2>
+    <select name="anime">
+        <option value="doraemon">Doraemon</option>
+        <option value="upin ipin">Upin-Ipin</option>
+        <option value="oscar">Oscar</option>
+        <option value="boboboy">Boboboy</option>
+        <option value="marsya and the bear">Marsya and The Bear</option>
+        <option value="spongebob">Spongebob</option>
+    </select>
+    <input type="submit" name="PilihKartun" value="Pilih"/>
+</form>
+
+<!-- Form 7: Film Anime Favorit (List Box) -->
+<form action="proseslistbox.php" method="post" name="input">
+    <h2>Pilih Film Anime Favorit anda:</h2>
+    <select name="anime" size="4">
+        <option value="Naruto">Naruto</option>
+        <option value="One Piece">One Piece</option>
+        <option value="Attack on Titan">Attack on Titan</option>
+        <option value="My Hero Academia">My Hero Academia</option>
+        <option value="Demon Slayer">Demon Slayer</option>
+        <option value="Dragon Ball">Dragon Ball</option>
+    </select>
+    <input type="submit" name="PilihListAnime" value="Pilih"/>
+</form>
+
+<!-- Form 8: Kritik dan Saran -->
+<form action="prosestextarea.php" method="post" name="input">
+    <h2>Isikan Kritik dan Saran Saudara:</h2>
+    <textarea name="saran" cols="40" rows="5"></textarea><br>
+    <input type="submit" name="ProsesSaran" value="Input Saran"/>
+</form>
+
+</body>
+</html>
